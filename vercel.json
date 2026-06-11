@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/api/pi-auth",                  "dest": "/api/pi-auth.js" },
+    { "src": "/api/pi-payment/approve",       "dest": "/api/payments/approve.js" },
+    { "src": "/api/pi-payment/complete",      "dest": "/api/payments/complete.js" },
+    { "src": "/api/pi-payment/cancel",        "dest": "/api/payments/cancel.js" },
+    { "src": "/api/pi-payment/incomplete",    "dest": "/api/payments/incomplete.js" },
+    { "src": "/SAGATAMA-GAMES(.*)",           "dest": "/public/SAGATAMA-GAMES.html" },
+    { "src": "/(.*)",                         "dest": "/public/$1" }
+  ]
+}
