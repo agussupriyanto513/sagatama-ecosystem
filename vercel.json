@@ -1,13 +1,5 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/api/pi-auth",               "dest": "/api/pi-auth.js" },
-    { "src": "/api/pi-payment/approve",    "dest": "/api/payments/approve.js" },
-    { "src": "/api/pi-payment/complete",   "dest": "/api/payments/complete.js" },
-    { "src": "/api/pi-payment/cancel",     "dest": "/api/payments/cancel.js" },
-    { "src": "/api/pi-payment/incomplete", "dest": "/api/payments/incomplete.js" },
-    { "src": "/games",                     "dest": "/SAGATAMA-GAMES.html" },
-    { "src": "/",                          "dest": "/index.html" },
-    { "src": "/(.*)",                      "dest": "/$1" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
