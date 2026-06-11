@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs24.x"
-    }
-  },
   "rewrites": [
     { "source": "/api/pi-auth",               "destination": "/api/pi-auth.js" },
     { "source": "/api/pi-payment/approve",    "destination": "/api/payments/approve.js" },
