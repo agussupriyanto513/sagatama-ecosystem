@@ -5,8 +5,6 @@
     { "source": "/api/pi-payment/approve",    "destination": "/api/payments/approve.js" },
     { "source": "/api/pi-payment/complete",   "destination": "/api/payments/complete.js" },
     { "source": "/api/pi-payment/cancel",     "destination": "/api/payments/cancel.js" },
-    { "source": "/api/pi-payment/incomplete", "destination": "/api/payments/incomplete.js" },
-    { "source": "/games",                     "destination": "/public/SAGATAMA-GAMES.html" },
-    { "source": "/SAGATAMA-GAMES",            "destination": "/public/SAGATAMA-GAMES.html" }
+    { "source": "/api/pi-payment/incomplete", "destination": "/api/payments/incomplete.js" }
   ]
 }
